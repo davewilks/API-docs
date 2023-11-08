@@ -1,1 +1,0 @@
-﻿define({r:0.5,st:'Stem',n:1,t:[0],m:[0],u:['../Content/API-docs/api-conceptual-docs.htm'],s:['+','like'],p:[['+',40],['and',37],['choose',10],['easily',13],['google',1],['keyavi',40],['number',40],['protect',1],['short',1],['they\u0027re',2],['west',40]]});
