@@ -1,0 +1,535 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/*===========================================================================================================================================================
+
+Hello! If this is your first time looking at a stylesheet within the text editor view, what you are reading right now is a "comment". Comments are added throughout this stylesheet with the purpose of making the source code easier to understand, comments will not be interpreted during the compile process. Since comments are not interpreted during the compile process, feel free to add or remove any comments.
+
+For help with MadCap Flare go to Help Ribbon > Topics Section > Open Help. Alternatively visit the Flare Online Help at help.madcapsoftware.com
+
+If you have any questions regarding how to work with this stylesheet or template project, please contact MadCap Technical Support. 
+https://www.madcapsoftware.com/support/contact-options.aspx
+
+===========================================================================================================================================================*/
+
+/*==Topic General Styles==*/
+
+@font-face 
+{
+	font-family: 'Keyavi';
+	src: url("../Icons/Keyavi.ttf");
+}
+
+.micro-response1373085640
+{
+	color: #404040;
+	line-height: 1.7em;
+	font-family: 'Segoe UI';
+	font-size: 16px;
+	background-color: #EEEEEE;
+}
+
+.micro-response1373085640 h1
+{
+	font-weight: 700;
+	margin-bottom: 8px;
+	margin-top: 30px;
+	font-size: 36px;
+	color: #005511;
+	padding-bottom: 10px;
+}
+
+.micro-response1373085640 h2
+{
+	margin-bottom: 4px;
+	margin-top: 20px;
+	font-style: normal;
+	color: #005511;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.micro-response1373085640 h3
+{
+	margin-bottom: 4px;
+	margin-top: 16px;
+	font-weight: 500;
+	font-style: normal;
+	color: #005511;
+	font-size: 24px;
+}
+
+.micro-response1373085640 h4
+{
+	font-size: 18px;
+	color: #005511;
+	font-weight: 500;
+}
+
+.micro-response1373085640 li
+{
+	margin-bottom: 6px;
+	margin-top: 6px;
+}
+
+/*Supporting nested lists */
+/*First level numeric, second level lower alpha */
+
+.micro-response1373085640 ol ol,
+.micro-response1373085640 ul ol
+{
+	list-style-type: lower-alpha;
+}
+
+/*First level numeric, second level bullet */
+
+.micro-response1373085640 ol ul
+{
+	list-style-type: disc;
+}
+
+/*First level disc bullet, second level circle bullet */
+
+.micro-response1373085640 ul ul
+{
+	list-style-type: circle;
+}
+
+.micro-response1373085640 p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+.micro-response1373085640 img	/*Setting max-width: 100%; property makes images always fit the width of the container*/
+{
+	max-width: 50%;
+}
+
+/*Keyavi update: the steps class is for images in orered or unordered steps. It adds a border and makes ure that the images don't overtake the page*/
+
+.micro-response1373085640 img.steps
+{
+	max-width: 25%;
+	border-style: solid;
+	border-width: thin;
+	border-color: #005511;
+}
+
+/* The inline class ensure that icons in text don't look weird :) */
+
+.micro-response1373085640 img.inline
+{
+	max-width: 25px;
+	display: inline;
+	margin: 0 0.125em;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+.micro-response1373085640 img.thumbnail
+{
+	mc-thumbnail: popup;
+}
+
+.micro-response1373085640 a
+{
+	
+}
+
+.micro-response1373085640 a:visited
+{
+	color: #000000;
+}
+
+.micro-response1373085640 a:hover
+{
+	
+}
+
+.micro-response1373085640 a.MCBreadcrumbsLink
+{
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.micro-response1373085640 a.MCBreadcrumbsLink:visited
+{
+	color: #000000;
+}
+
+.micro-response1373085640 a.MCBreadcrumbsLink:hover
+{
+	color: #EEEEEE;
+	/*Replaced by Dave */
+}
+
+.micro-response1373085640 MadCap|breadcrumbsProxy
+{
+	border-bottom: none;
+	font-size: .7em;
+	font-style: italic;
+	mc-breadcrumbs-prefix: 'You are here: ';
+}
+
+.micro-response1373085640 MadCap|xref
+{
+	mc-format: '{para}';
+	text-decoration: underline;
+	color: #000000;
+}
+
+.micro-response1373085640 MadCap|xref:hover
+{
+	color: #008800;
+	font-weight: normal;
+}
+
+.micro-response1373085640 MadCap|dropDown
+{
+	mc-open-image: url('../../Content/Resources/Icons/Arrows/arrow-down-gray.png');
+	mc-closed-image: url('../../Content/Resources/Icons/Arrows/arrow-right-gray.png');
+}
+
+.micro-response1373085640 MadCap|dropDownHotspot
+{
+	color: #005511;
+	font-weight: bold;
+}
+
+/*==Master Page Topic Layout==*/
+
+.micro-response1373085640 .main-section	/*This style applies the gradient background. This HTML element is not on a master page, this element is used at compile time.*/
+{
+	background: #EEEEEE;
+	/* Replaced all instances of #AD00AD by Dave */
+	/* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, #EEEEEE, #E5F0FC);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #EEEEEE, #E5F0FC);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #EEEEEE, #E5F0FC);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #EEEEEE, #E5F0FC);
+	/* Standard syntax */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.micro-response1373085640 div.content-container	/*Wraps the topic content on the masterpage and provides the white background behind topics.*/
+{
+	margin-right: 0;
+	background-color: #FFF;
+	padding: 25px;
+	min-height: 95vh;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border: 1px solid #d3d3d3;
+}
+
+.micro-response1373085640 div.side-content	/*Container for Menu proxy*/
+{
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 33.33%;
+}
+
+.micro-response1373085640 div.on-this-page	/*Container for Menu proxy*/
+{
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 33.33%;
+	position: fixed;
+}
+
+.micro-response1373085640 a
+{
+	color: #000000;
+	text-decoration: underline;
+}
+
+.micro-response1373085640 MadCap|expandingHead
+{
+	color: #005511;
+	mc-closed-image: url('../../Content/Resources/Icons/expand.png');
+	mc-open-image: url('../../Content/Resources/Icons/COLLAPSE.png');
+}
+
+.micro-response1373085640 MadCap|expandingBody
+{
+	mc-closed-image: url('../../Content/Resources/Icons/expand.png');
+	mc-open-image: url('../../Content/Resources/Icons/COLLAPSE.png');
+}
+
+.micro-response1373085640 MCExpanding_Closed
+{
+	background-image: url('../../Content/Resources/Icons/expand.png');
+}
+
+.micro-response1373085640 MCExpanding_Open
+{
+	background-image: url('../../Content/Resources/Icons/COLLAPSE.png');
+}
+
+.micro-response1373085640 MadCap|glossaryTerm
+{
+	color: #000000;
+	font-style: italic;
+	font-weight: 500;
+}
+
+.micro-response1373085640 MadCap|glossaryTerm:focus
+{
+	color: #008800;
+}
+
+.micro-response1373085640 MadCap|glossaryTerm:hover
+{
+	color: #008800;
+}
+
+.micro-response1373085640 MadCap|glossaryTerm.Popup
+{
+	font-weight: 400;
+	background: #ddeedd;
+	font-style: normal;
+	/*mc-closed-image: url('../Icons/closed-eye.png'); */
+}
+
+.micro-response1373085640 a.GlossaryPageTerm
+{
+	text-decoration: none;
+}
+
+.micro-response1373085640 MadCap|glossaryTerm.Expanding
+{
+	mc-closed-image: url('../../Content/Resources/Icons/closed-eye.png');
+	mc-open-image: url('../../Content/Resources/Icons/open-eye.png');
+}
+
+/* Style for inline code */
+
+.micro-response1373085640 code.inline
+{
+	font-size: 15;
+	background: #e3e8e3;
+	border: 1px;
+	border-style: solid;
+	border-radius: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.micro-response1373085640 code.api-table-entry
+{
+	font-size: 15;
+	font-weight: 600;
+}
+
+.micro-response1373085640 code.api-table-type
+{
+	font-size: 15;
+	font-weight: 400;
+}
+
+.micro-response1373085640 p.api-table-entry
+{
+	font-size: 15;
+	font-weight: 600;
+	font-family: monospace;
+}
+
+.micro-response1373085640 p.api-table-type
+{
+	font-size: 15;
+	font-weight: 400;
+	font-family: monospace;
+	text-indent: 10px;
+}
+
+/* Style for inline code in a note.*/
+
+.micro-response1373085640 code.note
+{
+	font-size: 15;
+	background: #EEEEEE;
+	border: 1px;
+	border-style: solid;
+	border-radius: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.micro-response1373085640 div.right-content
+{
+	float: right;
+}
+
+.micro-response1373085640 .version-pill
+{
+	pointer-events: none;
+	background-color: #008800;
+	border: solid 1px #008800;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 13px;
+	margin-left: -1px;
+	margin-bottom: 10px;
+	border-radius: 100px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.micro-response1373085640 MadCap|popupHead
+{
+	color: #005511;
+}
+
+/*===========================================================================================================================================================
+Styles after this point are styles that are for specific mediums. If any additional styles are added to this template they will be listed after mediums.
+[@media tablet] declares styles that will apply when the screen is in tablet view
+[@media mobile] declares styles that will apply when the screen is in mobile view
+===========================================================================================================================================================*/
+
+@media only screen and (max-width: 1279px)
+{
+	.micro-response1373085640 img
+	{
+		
+	}
+
+	.micro-response1373085640 h2
+	{
+		
+	}
+
+	.micro-response1373085640 h3
+	{
+		
+	}
+
+	.micro-response1373085640
+	{
+		
+	}
+
+	.micro-response1373085640 a
+	{
+		
+	}
+
+	.micro-response1373085640 a:hover
+	{
+		
+	}
+
+	.micro-response1373085640 a:visited
+	{
+		
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	.micro-response1373085640 .main-section > .outer-row	/*Removes the padding around the body proxy in mobile*/
+	{
+		padding: 0;
+	}
+
+	.micro-response1373085640 div.home-master-page-footer > div	/*Adds separators to the footer items when in mobile layout*/
+	{
+		border-bottom: 1px solid #828282;
+	}
+
+	.micro-response1373085640 img.steps
+	{
+		max-width: 75%;
+	}
+}
+
+/* Custom Keyavi classes */
+
+.micro-response1373085640 span.keyaviMainAccent
+{
+	color: #44CC00;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.micro-response1373085640 span.keyaviMidAccent
+{
+	color: #008800;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.micro-response1373085640 p.note
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color: #DDEEDD;
+	background-image: url('../../Content/Resources/Icons/i-uniE902-25.png');
+	background-position: 9px 12px;
+	background-repeat: no-repeat;
+	border: solid 1px #008800;
+	border-radius: 6px;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 15px 60px;
+}
+
+.micro-response1373085640 p.tip
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color: #DDEEDD;
+	background-image: url('../../Content/Resources/Icons/light-bulb.png');
+	background-position: 9px 12px;
+	background-repeat: no-repeat;
+	border: solid 1px #008800;
+	border-radius: 6px;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 15px 60px;
+}
+
+.micro-response1373085640 th.tableHeader
+{
+	color: #ffffff;
+}
+
+.micro-response1373085640 p.tableHeader
+{
+	color: #ffffff;
+	text-align: left;
+}
+
+.micro-response1373085640 div.GlossaryPageHeading_0
+{
+	font-size: 1.5em;
+	color: #005511;
+	mc-heading-level: 1 !important;
+}
+
+.micro-response1373085640 span.mc-variable.General\00002E_keyavi_ui_interaction
+{
+	
+}
+
+.micro-response1373085640 MadCap|popupBody
+{
+	background-color: #DDEEDD;
+	color: #404040;
+	font-style: normal;
+}
+
+.micro-response1373085640 a.GlossaryPageLink
+{
+	text-decoration: none;
+	font-weight: 600;
+}
+
